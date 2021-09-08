@@ -1,0 +1,141 @@
+
+--- Job Situación Problema IN2040 v2.gms Start 09/03/21 14:41:04 36.1.0 r2c0a44a DEX-DEG x86 64bit/Mac OS X
+--- Applying:
+    /Library/Frameworks/GAMS.framework/Versions/36/Resources/gmsprmun.txt
+--- GAMS Parameters defined
+    Input "/Users/ginafernandez/Downloads/Situación Problema IN2040 v2.gms"
+    PageSize 0
+    ScrDir /Users/ginafernandez/Downloads/225a/
+    SysDir /Library/Frameworks/GAMS.framework/Versions/36/Resources/
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: GAMS Demo license for Gina Fernandez           G210826|0002CO-GEN
+          Tecnologico de Monterrey, Mexico                         DL046781
+          /Users/ginafernandez/Library/Application Support/GAMS/gamslice.txt
+          A01720736@itesm.mx, Gina Fernandez                               
+          Demo license for demonstration and instructional purposes only
+Processor information: 1 socket(s), 4 core(s), and 8 thread(s) available
+GAMS 36.1.0   Copyright (C) 1987-2021 GAMS Development. All rights reserved
+--- Starting compilation
+--- Situación Problema IN2040 v2.gms(71) 3 Mb
+--- Starting execution: elapsed 0:00:00.002
+--- Generating MIP model SituacionProblema
+--- Situación Problema IN2040 v2.gms(70) 4 Mb
+---   69 rows  163 columns  513 non-zeroes
+---   30 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.023
+
+IBM ILOG CPLEX   36.1.0 r2c0a44a Released Aug 02, 2021 DEG x86 64bit/Mac OS X 
+
+--- *** This solver runs with a demo license. No commercial use.
+--- GMO setup time: 0.00s
+--- GMO memory 0.53 Mb (peak 0.53 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 20.1.0.1 link memory 0.00 Mb (peak 0.01 Mb)
+--- Starting Cplex
+
+Version identifier: 20.1.0.1 | 2021-04-07 | 3a818710c
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Generic callback                                 0x50
+Found incumbent of value -2933.600000 after 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 2 rows and 3 columns.
+Reduced MIP has 66 rows, 160 columns, and 344 nonzeros.
+Reduced MIP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 66 rows, 160 columns, and 344 nonzeros.
+Reduced MIP has 30 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.29 ticks)
+Probing time = 0.00 sec. (0.01 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Tried aggregator 1 time.
+No LP presolve or aggregator reductions.
+Presolve time = 0.00 sec. (0.05 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =         89920.000000
+Iteration:    62   Dual objective     =         14400.000000
+Root relaxation solution time = 0.00 sec. (0.26 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                        -2933.6000   104640.0000              --- 
+Found incumbent of value -2933.600000 after 0.01 sec. (0.88 ticks)
+      0     0    14400.0000     4    -2933.6000    14400.0000       65  590.86%
+*     0+    0                        14272.0000    14400.0000             0.90%
+Found incumbent of value 14272.000000 after 0.01 sec. (0.93 ticks)
+      0     0    14400.0000     4    14272.0000      Cuts: 11       72    0.90%
+      0     0    14400.0000     8    14272.0000      Cuts: 12       88    0.90%
+*     0+    0                        14318.0800    14400.0000             0.57%
+Found incumbent of value 14318.080000 after 0.02 sec. (2.09 ticks)
+      0     2    14400.0000     4    14318.0800    14400.0000       97    0.57%
+Elapsed time = 0.02 sec. (3.98 ticks, tree = 0.01 MB, solutions = 3)
+
+Implied bound cuts applied:  1
+Flow cuts applied:  5
+Mixed integer rounding cuts applied:  2
+Gomory fractional cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (3.99 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.31 ticks)
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (4.30 ticks)
+
+--- MIP status (101): integer optimal solution.
+--- Cplex Time: 0.02sec (det. 4.30 ticks)
+
+--- Fixing integer variables and solving final LP...
+
+Version identifier: 20.1.0.1 | 2021-04-07 | 3a818710c
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 44 rows and 117 columns.
+Reduced LP has 24 rows, 46 columns, and 104 nonzeros.
+Presolve time = 0.00 sec. (0.09 ticks)
+Symmetry aggregator did 36 additional substitutions.
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =          1349.999999
+Iteration:     4   Dual objective     =         16488.000000
+
+Dual crossover.
+  Dual:  Fixed no variables.
+  Primal:  Fixing 12 variables.
+       11 PMoves:  Infeasibility  0.00000000e+00  Objective  1.43180800e+04
+        0 PMoves:  Infeasibility  0.00000000e+00  Objective  1.43180800e+04
+  Primal:  Pushed 4, exchanged 8.
+
+--- Fixed MIP status (1): optimal.
+--- Cplex Time: 0.00sec (det. 0.17 ticks)
+
+
+Proven optimal solution
+MIP Solution:        14318.080000    (125 iterations, 9 nodes)
+Final Solve:         14318.080000    (11 iterations)
+
+Best possible:       14318.080000
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model SituacionProblema
+--- Executing after solve: elapsed 0:00:00.120
+--- Situación Problema IN2040 v2.gms(71) 4 Mb
+*** Status: Normal completion
+--- Job Situación Problema IN2040 v2.gms Stop 09/03/21 14:41:04 elapsed 0:00:00.121
